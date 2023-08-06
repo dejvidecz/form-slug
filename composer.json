@@ -1,60 +1,51 @@
 {
-	"name"			: "ipub/form-slug",
-	"type"			: "library",
-	"description"	: "Forms control for adding slug filed for Nette Framework",
-	"keywords"		: ["nette", "form", "sluggable", "ipub", "ipublikuj", "framework", "tools"],
-	"homepage"		: "https://github.com/iPublikuj/form-slug",
-	"license"		: ["GPL-2.0", "GPL-3.0"],
-
-	"authors": [
-		{
-			"name"		: "iPublikuj:cms",
-			"email"		: "info@ipublikuj.eu",
-			"homepage"	: "http://www.ipublikuj.eu/"
-		}
-	],
-
-	"support":{
-		"email"		:"support@ipublikuj.eu",
-		"issues"	:"https://github.com/iPublikuj/form-slug/issues"
-	},
-
-	"extra": {
-		"ipub"	: {
-			"configuration" : {
-				"extensions" : {
-					"formSlug" : "IPub\\FormSlug\\DI\\FormSlugExtension"
-				}
-			}
-		}
-	},
-
-	"require": {
-		"php"	: ">=7.1",
-
-		"nette/application"	: "~2.4",
-		"nette/di"			: "~2.4",
-		"nette/forms"		: "~2.4",
-		"nette/utils"		: "~2.4",
-
-		"latte/latte"	: "~2.4"
-	},
-
-	"require-dev": {
-		"nette/bootstrap"		: "~2.4",
-		"nette/mail"			: "~2.4",
-		"nette/robot-loader"	: "~2.4",
-		"nette/safe-stream"		: "~2.3",
-		"nette/tester"			: "~2.0",
-
-		"tracy/tracy"	: "~2.4",
-
-		"pds/skeleton"	: "~1.0"
-	},
-
-	"autoload": {
-		"psr-0": {
-			"IPub\\FormSlug\\": "src/"
-		}
-	}
+  "name": "dejvidecz/form-slug",
+  "type": "library",
+  "description": "Forms control for adding slug filed for Nette Framework",
+  "keywords": [
+    "nette",
+    "form",
+    "sluggable",
+    "ipub",
+    "ipublikuj",
+    "framework",
+    "tools"
+  ],
+  "homepage": "https://github.com/iPublikuj/form-slug",
+  "license": [
+    "GPL-2.0",
+    "GPL-3.0"
+  ],
+  "authors": [
+    {
+      "name": "iPublikuj:cms",
+      "email": "info@ipublikuj.eu",
+      "homepage": "http://www.ipublikuj.eu/"
+    }
+  ],
+  "support": {
+    "email": "support@ipublikuj.eu",
+    "issues": "https://github.com/iPublikuj/form-slug/issues"
+  },
+  "extra": {
+    "ipub": {
+      "configuration": {
+        "extensions": {
+          "formSlug": "IPub\\FormSlug\\DI\\FormSlugExtension"
+        }
+      }
+    }
+  },
+  "require": {
+    "php": ">=7.1"
+  },
+  "require-dev": {
+    "nette/nette": "3.*",
+    "pds/skeleton": "~1.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "IPub\\FormSlug\\": "src/"
+    }
+  }
 }

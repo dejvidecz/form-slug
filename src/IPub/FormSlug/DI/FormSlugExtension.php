@@ -42,7 +42,7 @@ final class FormSlugExtension extends DI\CompilerExtension
 
 		$builder = $this->getContainerBuilder();
 
-		$initialize = $class->methods['initialize'];
+		$initialize = $class->getMethod('initialize');
 		$initialize->addBody('IPub\FormSlug\Controls\Slug::register($this->getService(?));', [
 			$builder->getByType(UI\ITemplateFactory::class)
 		]);
